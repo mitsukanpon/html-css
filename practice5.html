@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>フォームの練習</title>
+        <meta name="description" content="フォームの練習をします">
+    </head>
+    <body>
+        <form action="example.php" method="post" name="contact-form">
+            名前<br><input type="text" name="name" placeholder="ここに名前を入力してください"><br>
+            メアド<br><input type="email" name="email"placeholder="ここにメアドを入力してください"><br>
+            電話<br><input type="tel" name="tel" placeholder="ここに電話番号を入力してください">
+            <input type="radio" name="gender" value="0" checked>男<input type="radio" name="gender" value="1">女<input type="radio" name="gender" value="2">その他<br>
+            送信<input type="submit"> 
+        </form>
+        <form action="example.php" method="post" name="checkbox-form"> 
+            好きな色<br>
+            <input type="checkbox" name="check-color" value="赤">赤
+            <input type="checkbox" name="check-color" value="青" checked>青
+            <input type="checkbox" name="check-color" value="黄">黄<br>
+            <input type="submit" value="送信する">
+        </form>
+        <form action="example.php" method="post" name="search-form">
+            検索フォーム<input type="search" name="search" placeholder="検索したいワードを入力"><br>
+            <input type="submit" value="検索する">
+        </form>
+        <form>
+            <textarea placeholder="メッセージを入力"></textarea>
+        </form>
+    </body>
+</html>
